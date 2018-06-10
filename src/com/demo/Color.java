@@ -5,23 +5,24 @@ public class Color {
     private int green;
     private int blue;
 
+    public static int test;
+
     public Color() {
 
     }
 
-    public Color (int r, int g, int b) {
-        red = r;
-        green = g;
-        blue = b;
-    }
-    public void define(int r, int g, int b) {
-        red = r;
-        green = r;
-        blue = b;
+    public Color (int red, int green, int blue) {
+        this.red = red;
+        this.green = green;
+        this.blue = blue;
     }
 
     public int getRed() {
         return red;
+    }
+
+    public int getTest() {
+        return test;
     }
 
     public int getGreen() {

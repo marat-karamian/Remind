@@ -7,8 +7,7 @@ public class Baloon {
     long id;
 
     public Baloon() {
-        color = new Color();
-        color.define(0, 0, 1);
+        color = new Color(0, 0, 1);
     }
 
     public void up() {
@@ -18,8 +17,7 @@ public class Baloon {
     }
 
     public void repaint(int r, int g, int b) {
-        color = new Color();
-        color.define(r, g, b);
+        color = new Color(r, g, b);
     }
 
     public void down() {
@@ -33,10 +31,10 @@ public class Baloon {
     }
 
     public double calculate() {
-        return velocity*attitude;
+        return velocity * attitude;
     }
 
-    public double calculate2(double vel, double alt) {
-        return vel*alt;
+    public double calculate(double vel, double alt) {
+        return vel * alt;
     }
 }
